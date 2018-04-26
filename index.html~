@@ -38,8 +38,8 @@
     <div class="site-content container">
       <div class="col-md-9">
 
-        <p><img style="WIDTH:530px; HEIGHT:71px; border:0" src="index_archivos/logouncuyofcai.png"></p>
         <p><img style="WIDTH:530px; HEIGHT:400px; border:0" src="index_archivos/introoctave.jpg" ></p>
+        <p><img style="WIDTH:530px; HEIGHT:71px; border:0" src="index_archivos/logouncuyofcai.png"></p>
         
         <h1 id="introducción-a-octave">Introducción a OCTAVE</h1>
         <p>Este curso está orientado a estudiantes de ingeniería de la FCAI-UNCuyo, que desean adquirir conocimientos y habilidades de programación básica en lenguaje m de Octave/Matlab para resolver problemas simples de computación científica en ingeniería. </p>
