@@ -30,6 +30,7 @@ brazo = [0.0,0.0,0.0;
 Rten=sqrt(0.7^2+1.3^2);
 alfa=linspace(0,2*pi,360)';
 posB=Rten*[cos(alfa), sin(alfa),zeros(360,1)] + [1.7, 0, 0];
+
 tenB=[1.7,0.0,2.1;
       2.4,1.3,0.0];
 auxP=[1.7,0.0,2.1;
@@ -53,7 +54,7 @@ text( 2.4, 1.3, 0.2,'B','fontsize',24)
 xlabel('x','fontsize',20)
 ylabel('y','fontsize',20)
 zlabel('z','fontsize',20)
-set(gca,'fontsize',16)
+set(gca,'fontsize',20)
 grid
 box off
 axis equal
@@ -62,3 +63,35 @@ ylim([-1.6,1.6])
 zlim([-0.1,2.3])
 fig1 = gcf ();
 set(fig1, "numbertitle", "off", "name", "Mecánica Vectorial")
+
+%Momento torsor en O realizado por la fuera T en 3 posiciones de B
+rA=[1.7,0.0,2.1];
+T1=2.5*( [1.7+Rten,   0,0]-rA )/norm( [1.7+Rten,   0,0]-rA );
+T2=2.5*( [1.7     ,Rten,0]-rA )/norm( [1.7     ,Rten,0]-rA );
+T3=2.5*( [1.7-Rten,   0,0]-rA )/norm( [1.7-Rten,   0,0]-rA );
+
+nM1=norm(cross(rA,T1))
+nM2=norm(cross(rA,T2))
+nM3=norm(cross(rA,T3))
+
+
+%=========================================================
+% Calculamos y graficamos el momento torsor en O que realizado
+% el cable tensor, T, parametrizado por el angulo alfa que determina
+% la posicion del punto B en el plano xy.
+
+T = 2.5; %norma de la tension en el cable
+Mnorm=zeros(360,1);
+
+for i=1:360
+  rB = posB(i,:);
+  nT = (rB-rA)/norm(rB-rA);
+  MOA= cross(rA,T*nT);
+  Mnorm(i) = norm(MOA);
+end
+
+figure(1);clf
+plot(alfa, Mnorm, 'r-', 'linewidth', 4)
+xlabel('\alpha','fontsize',24)
+ylabel('M(\alpha)','fontsize',24)
+set(gca,'fontsize',20)
