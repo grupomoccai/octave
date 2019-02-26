@@ -33,15 +33,15 @@
 			<script src="index_archivos/index.js"></script>
     </header>
     <style>
-	 .bottom-three {margin-bottom: 2cm;}
+	 .bottom-three {margin-bottom: 3cm;}
   	 </style>
   	 <p class="bottom-three"> </p>
 
     <div class="site-content container">
       <div class="col-md-9">
 
-        <p><img style="WIDTH:530px; HEIGHT:71px; border:0" src="index_archivos/logouncuyofcai.png">
-           <img style="WIDTH:265px; HEIGHT:200px; border:0" src="index_archivos/introoctave.jpg" ></p>
+        <p><img style="WIDTH:265px; HEIGHT:36px; border:0" src="index_archivos/logouncuyofcai.png"></p>
+        <p><img style="WIDTH:265px; HEIGHT:200px; border:0" src="index_archivos/introoctave.jpg" ></p>
 
         
         <h1 id="introducción-a-octave">Introducción a OCTAVE</h1>
