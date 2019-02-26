@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html><head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style> img {width: 100%;} </style>
     <meta http-equiv="content-type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Octave - 2018</title>
+    <title>OCTAVE - 2018</title>
     <meta name="description" content="Electiva N° 188 Introducción a Octave para Ciencias Aplicadas e Ingeniería
 ">
-    <link rel="stylesheet" href="2018_curso/index_archivos/main.css">
+    <link rel="stylesheet" href="index_archivos/main.css">
     <link rel="canonical" href="https://introoctave.github.io/">
-    <!-- <link rel="alternate" type="application/rss+xml" title="Introducción a Octave - 2018" href="https://introoctave.github.io/feed.xml" /> -->
-    <link rel="stylesheet" type="text/css" href="2018_curso/index_archivos/prettify.css">
+    <link rel="stylesheet" type="text/css" href="index_archivos/prettify.css">
   </head>
   <body>
     <header id="header" class="navbar navbar-default navbar-fixed-top">
-      <div class="container"> <a href="2018_curso/2018index.html" class="navbar-brand">Introducción a OCTAVE - 2018</a>
+      <div class="container"> <a href="2018index.html" class="navbar-brand">Introducción a OCTAVE - 2018</a>
         <div class="navbar-header"> <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main"> <span class="icon-bar"></span>
             <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
         </div>
-        <div class="collapse navbar-collapse">
+        <div class="collapse navbar-collapse" id="navbar-main">
           <ul class="nav navbar-nav">
-            <li><a href="2018_curso/2018clases.html">Clases</a></li>
-            <li><a href="2018_curso/2018practicas.html">Prácticas</a></li>
+            <li><a href="2018clases.html">Clases 2018</a></li>
+            <li><a href="2018practicas.html">Prácticas 2018</a></li>
           </ul>
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="index.html">Curso OCTAVE</a></li>
-          </ul>
+            <li><a href="../index.html">Curso OCTAVE</a></li>
           </ul>
         </div>
         <!-- /.navbar-collapse --> </div>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+			<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.1/js/bootstrap.min.js'></script>
+			<script src="index_archivos/index.js"></script>
     </header>
     <style>
 	 .bottom-three {margin-bottom: 2cm;}
@@ -39,6 +42,7 @@
 
         <p><img style="WIDTH:530px; HEIGHT:71px; border:0" src="index_archivos/logouncuyofcai.png">
            <img style="WIDTH:265px; HEIGHT:200px; border:0" src="index_archivos/introoctave.jpg" ></p>
+
         
         <h1 id="introducción-a-octave">Introducción a OCTAVE</h1>
         <p>Este curso está orientado a estudiantes de ingeniería de la <a href="http://fcai.uncuyo.edu.ar/">FCAI-UNCuyo</a>, que desean adquirir conocimientos y habilidades de programación básica en lenguaje m de Octave/Matlab para resolver problemas simples de computación científica en ingeniería. </p>
