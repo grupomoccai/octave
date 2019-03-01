@@ -46,10 +46,10 @@
       <div class="col-md-9">
         <h1 id="introducción-a-octave">Prácticas</h1>
         <ul>
-          <li><a href="practicas_archivos/2019_IntroOctave-TP1.pdf">Trabajo Práctico 1</a><br></li>
-          <li><a href="practicas_archivos/2019_introOctave-TP2.pdf">Trabajo Práctico 2</a><br></li>
-          <li><a href="practicas_archivos/2019_introOctave-TP3.pdf">Trabajo Práctico 3</a><br></li>
-          <li><a href="practicas_archivos/2019_IntroOctave-TP4.pdf">Trabajo Práctico 4</a><br></li>
+          <li><a href="practicas_archivos/2019_introoctave-tp1.pdf">Trabajo Práctico 1</a><br></li>
+          <li><a href="practicas_archivos/2019_introoctave-tp2.pdf">Trabajo Práctico 2</a><br></li>
+          <li><a href="practicas_archivos/2019_introoctave-tp3.pdf">Trabajo Práctico 3</a><br></li>
+          <li><a href="practicas_archivos/2019_introoctave-tp4.pdf">Trabajo Práctico 4</a><br></li>
 
           <h2 id="introducción-a-octave">Scripts prácticas</h2>
           <!--

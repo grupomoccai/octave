@@ -45,7 +45,7 @@
     <div class="site-content container">
       <div class="col-md-9">
         <p><img {width: 90%;} src="index_archivos/logouncuyofcai.png"></p>
-        <p><img {width: 90%;} src="index_archivos/introoctave.png" ></p>
+        <p><img {width: 90%;} src="index_archivos/introoctave.jpg" ></p>
         
         <h1 id="introducción-a-octave">Introducción a OCTAVE</h1>
         <p>Este curso está orientado a estudiantes de Ingeniería Mecánica de la <a href="http://fcai.uncuyo.edu.ar/estudios/carrera/ingenieria-mecanica">FCAI-UNCuyo</a>, aunque pueden tomarlo estudiantes de otras carreras de ingeniería, que desean adquirir conocimientos y habilidades de programación básica en
