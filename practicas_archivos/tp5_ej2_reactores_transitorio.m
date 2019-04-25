@@ -1,6 +1,6 @@
-% Introduccion Octave - 2018 - FCAI-UNCuyo
+% Introduccion Octave - 2019 - FCAI-UNCuyo
 % 
-% Trabajo Practico 4 - Ejercicio 2
+% Trabajo Practico 5 - Ejercicio 2
 %
 % Respuesta transitoria o dinamica de la red de 5 reactores 
 % de la figura 12.3 (Chapra y Canale, 5ta Ed, 2007).
@@ -80,7 +80,7 @@ disp(R90)
 
 % === 2)
 
-qc1=@(t) 1+0.5*sin(t/2).*exp(-t/10); % =%= COMPLETAR
+qc1=@(t) 1+exp(-(t-10).^2);
 b2 =@(t) [qc1(t);0;4;0;0];
 
 f2 =@(c,t) (b2(t)-A*c);
@@ -110,9 +110,9 @@ set(gca,'fontsize',24)
 
 bEsc3 = zeros(N,1);
 
-% =%= COMPLETAR - REVISAR FUNCION CARGA3_ESCALON
+% =%= COMPLETAR - REVISAR FUNCION: TP5_EJ2_CARGA3_ESCALON
 for i=1:N
-  QCentr   = carga3_escalon(tt(i));
+  QCentr   = tp5_ej2_carga3_escalon(tt(i));
   bEsc3(i) = QCentr(3);
 end
 
@@ -124,7 +124,7 @@ h=legend('b_3(t)');
 set(h,'fontsize',24);
 set(gca,'fontsize',24)
 
-f3=@(c,t) (carga3_escalon(t) - A*c);
+f3=@(c,t) (tp5_ej2_carga3_escalon(t) - A*c);
 
 Ct3= lsode(f3,c0,tt);
 

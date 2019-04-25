@@ -1,13 +1,17 @@
-%Ejercicio: Cinemática del sólido rígido.
+% Introduccion Octave - 2019 - FCAI-UNCuyo
+% 
+% Trabajo Practico 5 - Ejercicio 3
+%
+% Ejercicio: Cinematica del solido rigido.
 %
 % Se considera un sistema de barras que giran sin rozamiento.
 % Una barra AB de longitud a=10cm gira con velocidad angular de 12 [rad/s] en 
-% sentido anti horario. A esta barra está unida una barra BC de longitud b=15cm,
+% sentido anti horario. A esta barra esta unida una barra BC de longitud b=15cm,
 % la cual gira libremente. Finalmente el otro extremo de la barra BC está unida
 % a la barra CD de longitud c=20cm que posee su otro extremo fijo.
 %
-% Se pide determinar la posición de las barras en función del tiempo, determinar
-% las velocidades de los puntos de unión.
+% Se pide determinar la posicion de las barras en funcion del tiempo, 
+% determinar las velocidades de los puntos de union.
 
 clear all
 close all
@@ -19,10 +23,10 @@ b=15;
 c=20;
 w=12;  %velocidad angular
 
-% Si se desea ver la animación del sistema se debe definit ipeli menor a 0
+% Si se desea ver la animacion del sistema se debe definir ipeli menor a 0
 ipeli=-1;
 
-% Mediante un análisis geométrico determinamos las posiciones de los 
+% Mediante un analisis geometrico determinamos las posiciones de los 
 % puntos P1 y P2
 function [x1, y1] = pos_pto1(a, wt)
   x1 = a * cos(wt);
@@ -45,14 +49,14 @@ for i=1:Nt
   
   [x1, y1] = pos_pto1(a, wt);
   
-  L     = sqrt( (x1-a/2-c)^2 + y1^2 );
-  beta  = acos( (L^2 + c^2 - b^2)/(2*L*c) );
-  theta = acos( (L^2 + (a/2+c)^2 - a^2)/(2*L*(a/2+c)) ) * sign(y1);
+  L     = 0.0; %==> completar
+  beta  = 0.0; %==> completar
+  theta = 0.0; %==> completar
   
   pt   = beta+theta;
   [x2, y2] = pos_pto2(a, c, pt);
 
-  %Almacenamos las posiciones de los puntos en función de t   
+  %Almacenamos las posiciones de los puntos en funcion de t   
   P1(i,:) = [x1, y1];
   P2(i,:) = [x2, y2];
 end
@@ -66,7 +70,7 @@ plot(P1(:,1),P1(:,2),'r+')
 plot(P2(:,1),P2(:,2),'bx')
 hold off
 
-% Posición del punto P2 en función del tiempo
+% Posicion del punto P2 en funcion del tiempo
 figure(2);clf
 hold on
 plot(tt,P2(:,1),'r--','linewidth',2)
@@ -79,7 +83,7 @@ xlim([0, 2*pi/w])
 set(h,'fontsize',20)  
 set(gca,'fontsize',20)  
 
-% Velocidad del punto P2 en función del tiempo
+% Velocidad del punto P2 en funcion del tiempo
 dt=tt(2);
 
 V2=zeros(Nt,2);
@@ -97,7 +101,9 @@ xlim([0, 2*pi/w])
 set(h,'fontsize',20)  
 set(gca,'fontsize',20)
 
-
+%====================================================================
+%Realizamos una animacion para ver la cinematica de las barras 
+%Este loop while funciona perfecto: NO TOCAR!
 while (ipeli<0)
   for i=1:10:Nt
     

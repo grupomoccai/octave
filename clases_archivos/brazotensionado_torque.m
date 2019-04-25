@@ -1,11 +1,11 @@
-% Ejercicio: mec�nica vectorial
+% Ejercicio: mecenica vectorial
 %
-% Una estructura r�gida con forma de L (brazo) se carga en el extremo libre 
+% Una estructura rigida con forma de L (brazo) se carga en el extremo libre 
 % mediante un tensor como se muestra en la figura (ver apuntes de clase).
-% La tensi�n en el cable se puede ajustar hasta un valor m�ximo de 2.5kN. 
+% La tension en el cable se puede ajustar hasta un valor maximo de 2.5kN. 
 %
 % Determinar, con OCTAVE, el momento M=r x T respecto al punto O que produce
-% la tensi�n del cable, que act�a en el punto A, y la magnitud de ese momento.
+% la tension del cable, que actua en el punto A, y la magnitud de ese momento.
 %
 % Se desea conocer como afecta la magnitud del momento torsor M la posici�n B
 % sobre el plano xy, en la cual es fijado el cable si se mantiene constante la
@@ -13,8 +13,8 @@
 %
 % 1) Grafique el sistema que debe ser analizado
 % 2) Determine las posiciciones de B en las que se logra el min(M) y max(M).
-% 3) Grafique la norma de M en funci�n del �ngulo alfa=[0,2pi] que parametriza
-%    la posici�n de B en el plano xy.
+% 3) Grafique la norma de M en funcion del angulo alfa=[0,2pi] que parametriza
+%    la posicion de B en el plano xy.
 
 %coordenadas del "brazo" donde se fija el tensor
 brazo = [0.0,0.0,0.0; 
@@ -25,7 +25,7 @@ brazo = [0.0,0.0,0.0;
 % El punto B se fija a una rueda de radio R=sqrt(1.3^2+0.7^2)
 % ubicada en el plano xy (z=0).
 % Definimos las posiciones del punto B como aquellos sobre un 
-% c�rculo de radio R parametrizadas por alfa en [0,2pi];
+% circulo de radio R parametrizadas por alfa en [0,2pi];
 
 Rten=sqrt(0.7^2+1.3^2);
 alfa=linspace(0,2*pi,360)';
@@ -38,7 +38,7 @@ auxP=[1.7,0.0,2.1;
       2.4,1.3,0.0];
       
 %=====================================================
-% A continuaci�n se representa gr�ficamente el problema bajo
+% A continuacion se representa graficamente el problema bajo
 % estudio.
 nB=[tenB(2,1)-tenB(1,1), tenB(2,2)-tenB(1,2), tenB(2,3)-tenB(1,3)];
 nB=nB/norm(nB);

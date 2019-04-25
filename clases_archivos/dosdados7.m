@@ -1,7 +1,7 @@
 % Ejemplo: simule tirar dos dados hasta que la
-% suma de ambas caras sea 7, cuente el número 
+% suma de ambas caras sea 7, cuente el numero 
 % de tiradas. Repita esto 1000 veces y estime 
-% la probabilidad y compare esta con el valor teórico.
+% la probabilidad y compare esta con el valor teorico.
 
 
 %------------------------------------------------
@@ -32,7 +32,7 @@ da2 = sum(ceil(rand(1000000,2)*6),2);
 pMue= hist(da2,11);
 pMue= pMue/sum(pMue);
 
-% Probabilidad teórica
+% Probabilidad teorica
 pTeo= [1,2,3,4,5,6,5,4,3,2,1]/36;
 
 figure(1);clf

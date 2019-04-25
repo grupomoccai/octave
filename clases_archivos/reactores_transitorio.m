@@ -43,8 +43,21 @@ set(gca,'fontsize',20)
 % por el tiempo que tarda cada reactor en alcanzar el 90%
 % de la concentracion en el estado estacionario: t90.
 %   1) Estime t90 para cada reactor.
-%   2) Calcular de forma exacta el tiempo t90
+%   2) Calcular de forma exacta el tiempo t90 [en Mate IV]
 
 c90 = 0.90 * (A\b);
 
-% === 1) 
+% RTA === 1) 
+
+% Estimamos el tiempo t90 empleando los valores calculados de C(t)
+% Esto lo determinamos como el minimo entre C90 y C(t) para cada columna Ci
+DC=Ct-c90';
+
+[dmin,imin]=min(DC.*DC);
+
+%mostramos los valores de t90 y comparamos C90aprox con C90 exacto
+R90=[t(imin(1)) Ct(imin(1),1) c90(1);
+     t(imin(2)) Ct(imin(2),2) c90(2);
+     t(imin(3)) Ct(imin(3),3) c90(3);
+     t(imin(4)) Ct(imin(4),4) c90(4);
+     t(imin(5)) Ct(imin(5),5) c90(5)]

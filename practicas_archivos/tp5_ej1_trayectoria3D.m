@@ -1,11 +1,11 @@
-% Introduccion Octave - 2018 - FCAI-UNCuyo
+% Introduccion Octave - 2019 - FCAI-UNCuyo
 % 
-% Trabajo Practico 4 - Ejercicio 1
+% Trabajo Practico 5 - Ejercicio 1
 close all
 clear all
 
 % vector columna de instantes de tiempo entre 0 y 3pi
-N = 3*180;
+N = 3*90;
 tt= linspace(0,3*pi,N)';
 
 % funciones parametricas de las posiciones en (x,y,z)
@@ -29,7 +29,7 @@ set(gca,'fontsize',20)
 %----------------------------------------------------------
 % 1.2) Distancia entre P0=r(t) y el plano sin(t)*x+cos(t)*y+z=3*t
 
-dP=@(t) 0; %==> completar
+dP=@(t) abs(0.0)/sqrt(2.0); %==> completar
 
 figure(2);clf
 plot(tt,dP(tt),'k-','linewidth',2);
@@ -42,12 +42,12 @@ set(gca,'fontsize',20)
 % 1.3) Rapidez de la particula
 
 % derivadas de las funciones parametricas de posicion
-xp=@(t) 0; %==> completar
-yp=@(t) 0; %==> completar
-zp=@(t) 0; %==> completar
+xp=@(t) 0.0; %==> completar
+yp=@(t) 0.0; %==> completar
+zp=@(t) 0.0; %==> completar
 
 % rapidez
-sp=@(t) sqrt(xp(t).^2 + yp(t).^2 + zp(t).^2);
+sp=@(t) sqrt(0.0); %==> completar
 
 figure(3);clf
 plot(tt,sp(tt),'m-','linewidth',2);
@@ -59,10 +59,15 @@ set(gca,'fontsize',20)
 %----------------------------------------------------------
 % 1.4) Calculo de la longitud de la trayectoria entre 0 y 3pi
 
+% calculo de la longitud en [0,3*pi] mediante integracion numerica
+L =quad(sp,0,3*pi);
+
 % calculo de la longitud recorrida en funcion de t
 ss=zeros(N,1);
 
-%==> completar
+for i=1:N
+  s(i) = 0.0; % ==> completar
+end 
 
 figure(4);clf
 plot(tt,ss,'r-','linewidth',2);
@@ -70,5 +75,6 @@ xlabel('t','fontsize',20)
 ylabel('s(t)','fontsize',20)
 set(gca,'fontsize',20)
 
-
-
+% ============================================
+% ES POSIBLE CALCULAR OTRA COSA INTERESANTE???
+% ============================================
