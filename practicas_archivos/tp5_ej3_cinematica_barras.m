@@ -10,9 +10,14 @@
 % la cual gira libremente. Finalmente el otro extremo de la barra BC está unida
 % a la barra CD de longitud c=20cm que posee su otro extremo fijo.
 %
-% Se pide determinar la posicion de las barras en funcion del tiempo, 
-% determinar las velocidades de los puntos de union.
-
+% Se pide 
+% 1) determinar la posicion de las barras en funcion del tiempo, 
+%    graficar trayectorias en el plano XY.
+% 2) graficar la posicion horizontal y vertical del punto C en funcion del tiempo 
+% 3) determinar las velocidades de los puntos de union.
+% 4) realizar una animacion donde se aprecien las posiciones de las barras y 
+%    las velocidades en X e Y del punto C (punto 2).
+ 
 clear all
 close all
 
@@ -26,8 +31,11 @@ w=12;  %velocidad angular
 % Si se desea ver la animacion del sistema se debe definir ipeli menor a 0
 ipeli=-1;
 
+% 1) ====================================================================
 % Mediante un analisis geometrico determinamos las posiciones de los 
-% puntos P1 y P2
+% puntos P1 y P2 (puntos B y C).
+
+% Se considera que el origen (0,0) es el punto A.
 function [x1, y1] = pos_pto1(a, wt)
   x1 = a * cos(wt);
   y1 = a * sin(wt);
@@ -70,6 +78,7 @@ plot(P1(:,1),P1(:,2),'r+')
 plot(P2(:,1),P2(:,2),'bx')
 hold off
 
+% 2) ====================================================================
 % Posicion del punto P2 en funcion del tiempo
 figure(2);clf
 hold on
@@ -83,11 +92,12 @@ xlim([0, 2*pi/w])
 set(h,'fontsize',20)  
 set(gca,'fontsize',20)  
 
+% 3) ====================================================================
 % Velocidad del punto P2 en funcion del tiempo
 dt=tt(2);
 
-V2=zeros(Nt,2);
-V2=[ diff(P2(:,1)), diff(P2(:,2)) ] / dt;
+V2=zeros(Nt-1,2);
+%V2= ... ==> COMPLETAR - ver funcion diff
 
 figure(3);clf
 hold on
@@ -101,7 +111,7 @@ xlim([0, 2*pi/w])
 set(h,'fontsize',20)  
 set(gca,'fontsize',20)
 
-%====================================================================
+% 4) ====================================================================
 %Realizamos una animacion para ver la cinematica de las barras 
 %Este loop while funciona perfecto: NO TOCAR!
 while (ipeli<0)
