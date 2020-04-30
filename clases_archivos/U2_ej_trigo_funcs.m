@@ -10,14 +10,14 @@ x=linspace(-2*pi,2*pi,100);
 
 %creamos la figura
 figure(1);clf
-pause(4) %espera 4 segundos
+pause(3) %espera 4 segundos
 
 %graficamos las funciones seno y coseno para cada valor de x
 hold on
 plot(x,sin(x),'ro-','linewidth',2)
 plot(x,cos(x),'bx--','linewidth',2)
 hold off
-pause(4) %espera 4 segundos
+pause(3) %espera 4 segundos
 
 %agregamos el titulo, nombre a los ejes, curvas, etc
 title('Funciones seno(x) y coseno(x)','fontsize',20)
@@ -25,10 +25,10 @@ xlabel('angulo en radianes','fontsize',20)
 ylabel('valor de la funcion','fontsize',20)
 leg=legend('cos(t)','sin(t)','location','north');
 legend boxoff
-set(gca,'fontsize',20)
+set(gca,'fontsize',20,'linewidth',2)
 axis([-7,7,-1.5,1.5])
 axis('on'), grid
-pause(4) %espera 4 segundos
+pause(3) %espera 4 segundos
 
 %cambiamos algunas de las propiedades definidas anteriormente
 xlabel('t','fontsize',20)

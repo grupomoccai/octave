@@ -24,7 +24,7 @@ z1 = t;
 fe1=ezplot3(x1, y1, z1,[0,2*pi])
 title('Curva parametrizada en 3D','fontsize',20)
 set(gca,'fontsize',20)
-set(fe1,'linewidth',3)
+set(fe1,'linewidth',3,'color','red')
 axis equal
 
 pause(4) % espera 4 segundos antes de continuar
@@ -38,7 +38,7 @@ pause(4) % espera 4 segundos antes de continuar
 %       siendo la excentricidad: c=a/b
 % Definimos las coordenadas de la trayectoria en 3D: x(t), y(t), z(t)
 x2 = 2*t*sin(pi*t);
-y2 = t*cos(pi*t);
+y2 = 1*t*cos(pi*t);
 z2 = t;
 
 ## Graficamos la trayectoria
@@ -48,5 +48,5 @@ hold off
 title('Curvas parametrizadas en 3D','fontsize',20)
 legend('espiral circular','espiral eliptica','location','northeast')
 set(gca,'fontsize',20,'linewidth',2)
-set(fe2,'linewidth',3)
+set(fe2,'linewidth',3,'color','blue')
 axis equal
