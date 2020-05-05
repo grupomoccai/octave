@@ -5,7 +5,7 @@
 % Analisis Oasis Sur de Mendoza - Temperaturas Estacion INTA Rama Caida
 
 % Leemos los datos del archivo .csv
-[fecha,hora,temp]=textread('temperaturas_INTARamaCaida_2016-2017.csv',"%s %s %f");
+[fecha,hora,temp]=textread('Temperaturas_INTARamaCaida_2016-2017.csv',"%s %s %f");
 
 % 1) Graficar las temperaturas en funcion del tiempo
 
