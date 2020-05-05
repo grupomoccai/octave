@@ -1,6 +1,6 @@
 % Introduccion a Octave - 2020 - FCAI-UNCuyo - MoCCAI
 % 
-% Trabajo Practico 4 - Ejercicio X
+% Trabajo Practico 4 - Ejercicio 1
 %
 % Analisis Oasis Sur de Mendoza - Temperaturas Estacion INTA Rama Caida
 
