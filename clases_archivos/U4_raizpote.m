@@ -6,7 +6,7 @@ function val=U4_raizpote(x,y)
 % Ejemplo 1:
 % x=ceil(rand(1,1)*10);
 % y=ceil(rand(1,1)*10);
-% val = raizpote(x,y)
+% val = U4_raizpote(x,y)
 %
 % Ejemplo 2:
 % x=ceil(rand(1,5)*10);
@@ -14,9 +14,8 @@ function val=U4_raizpote(x,y)
 % for i=1:5
 %   xi = x(i);
 %   yi = y(i);
-%   disp([xi yi raizpote(xi,yi)]);
+%   disp([xi yi U4_raizpote(xi,yi)]);
 % end
-
 %
 % (C) Octave 2020. MoCCAI, FCAI-UNCuyo.
 

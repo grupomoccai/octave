@@ -4,6 +4,9 @@
 %          Si la suma es par devuelve la raiz de la suma.
 %          Si la suma es impar devuelve la suma al cuadrado.
 
+clc
+clear
+
 % Se crea la funcion:
 disp('Prueba de la funcion raizpote')
 
@@ -11,9 +14,9 @@ disp('Prueba de la funcion raizpote')
 function val=U4_raizpoteCL(x,y) 
 % NOTA: no es posible obtener "help" de esta funcion, 
 %       pruebe ejecutar en la terminal:
-%       >> help raizpoteInline
+%       >> help U4_raizpoteCL
 
-s=x+y;
+s = x + y;
 
 if (mod(s,2) != 0) %resto distinto de cero => verdadero = impar
   disp('La suma de x e y es impar')
