@@ -1,16 +1,19 @@
 % Introduccion a Octave - 2020 - FCAI-UNCuyo - MoCCAI
 % 
-% Trabajo Practico 4 - Ejercicio 1
+% Trabajo Practico 4 - Ejercicio 7
 %
 % Analisis Oasis Sur de Mendoza - Temperaturas Estacion INTA Rama Caida
+clc
+clear 
+close all
 
 % Leemos los datos del archivo .csv
-[fecha,hora,temp]=textread('Temperaturas_INTARamaCaida_2016-2017.csv',"%s %s %f");
+[fecha,hora,temp]=textread('TP4_Ej7_Temperaturas_INTARamaCaida_2016-2017.csv',"%s %s %f");
 
 % 1) Graficar las temperaturas en funcion del tiempo
 
-N=length(temp);  %numero de elementos registrados en temp
-ndias=(1:N)/48;  %numeros de dias
+N=length(temp);
+ndias=(1:N)/48;
 
 figure(1);clf
 plot(ndias, temp)
@@ -27,16 +30,15 @@ tmin=zeros(1,N/48);
 tmax=zeros(1,N/48);
 tmed=zeros(1,N/48);
 
-%% AQUI es donde deben trabajar!
 for id=1:N/48
   elemI = (id-1)*48+1:id*48;  %de las mediciones de cada dia del anio
-  tempI = zeros(size(elemI)); %completar con las mediciones de temp/dia
-  tmin(id)=0;  %completar
-  tmax(id)=0;  %completar
-  tmed(id)=0;  %completar
+  tempI = zeros(size(elemI)); % <= completar con las mediciones de temp/dia
+  
+  tmin(id)=0;   % <= completar
+  tmax(id)=0;   % <= completar
+  tmed(id)=0;   % <= completar
 end
 
-%graficamos
 figure(2);clf
 hold on
 plot(tmin,'r-')
@@ -61,7 +63,6 @@ fprintf(1,'### La temperatura media  es %4.2f ºC\n', mean(temp));
  
 % 6) Determinar el dia en que se han obtenido los valores de temperatura media, 
 %    maxima y minima absoluta reportados en el informe del inta.
-
 diamax = fecha{iabs1};
 diamin = fecha{iabs2};
 fprintf(1,'### La temperatura minima se registro el %s\n', diamin);
