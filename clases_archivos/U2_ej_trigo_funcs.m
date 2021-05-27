@@ -1,4 +1,4 @@
-% Introduccion en Octave - 2021 - FCAI-UNCuyo
+% Introduccion a Octave 2021 - MoCCAI - FCAI-UNCuyo
 % Unidad 2
 % Ejemplo: prueba de algunas posibilidades de plot
 

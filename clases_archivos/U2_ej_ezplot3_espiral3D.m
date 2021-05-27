@@ -1,4 +1,4 @@
-% Introduccion en Octave - 2021 - FCAI-UNCuyo
+% Introduccion a Octave 2021 - MoCCAI - FCAI-UNCuyo
 % Unidad 2
 % Ejemplo: empleo del paquete "symbolic" para crear variables simbolicas
 % Graficaremos con ezplot3 una espiral circular parametrizada por t en 3D.
