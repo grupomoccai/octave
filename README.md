@@ -6,7 +6,7 @@ En este Proyecto se encuentra disponible el material de la Electiva de Introducc
 El cursado está dirigido a estudiantes de 2do año de Ingeniería Mecánica y carreras afines, la complejidad de los problemas varía gradualmente, siendo a partir de la Unidad 3 cuando se da comienzo a la resolución de ciertos problemas de interés. El abordaje es mediante la presentación del problema sin preámbulos al estilo "try, fail and fun", clases de práctica tuteladas y consultas mediante Classroom para los estudiantes registrados.
 
 
-En la edición del 2020 además se ha modificado la forma en que se dan las clases por el COVID-19 y se han preparado videos explicativos subidos a un canal de YouTube, como soporte a las clases en PDF que se pueden descargar de la web https://introoctave.github.io/.
+En la edición del 2020 además se ha modificado la forma en que se dan las clases por el COVID-19 y se han preparado videos explicativos subidos a un canal de YouTube, como soporte a las clases en PDF que se pueden descargar de la web https://grupomoccai.github.io/octave.
 
 Grupo MoCCAI: https://sites.google.com/view/moccai
 
