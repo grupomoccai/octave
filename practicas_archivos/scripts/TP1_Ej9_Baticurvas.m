@@ -1,3 +1,10 @@
+% Introduccion a Octave - 2022 - FCAI-UNCuyo
+% 
+%
+%% Guia de problemas 1
+%
+% Ingrese las funciones necesarias para graficar las baticurvas
+
 close all;
 clear all; 
 
